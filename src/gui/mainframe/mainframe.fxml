@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="676.0" style="-fx-background-color: #d6d9e2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mainframe.MainframeController">
+   <children>
+      <AnchorPane layoutX="99.0" layoutY="8.0" prefHeight="175.0" prefWidth="488.0" style="-fx-background-color: #3b5e79;">
+         <children>
+            <Label layoutX="34.0" layoutY="18.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #ffeb3b;" text="Plaintext">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="plainText" layoutX="154.0" layoutY="12.0" prefHeight="25.0" prefWidth="300.0" promptText="Enter Plain Text" style="-fx-background-color: #d2f1f1; -fx-border-color: #03a9f4;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="34.0" layoutY="73.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #ffeb3b;" text="Ciphertext">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cipherText" layoutX="154.0" layoutY="67.0" prefHeight="25.0" prefWidth="300.0" promptText="Generated Cipher Text" style="-fx-background-color: #d2f1f1; -fx-border-color: #03a9f4;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="34.0" layoutY="130.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #ffeb3b;" text="Plaintext">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dencryptedText" layoutX="154.0" layoutY="124.0" prefHeight="0.0" prefWidth="300.0" promptText="Dencrypted Plain Text" style="-fx-background-color: #d2f1f1; -fx-border-color: #03a9f4;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="203.0" style="-fx-text-fill: #210a61;" text="Encrytion-Dencryption:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="94.0" layoutY="248.0" prefHeight="243.0" prefWidth="488.0" style="-fx-background-color: #3b5e79;">
+         <children>
+            <Label layoutX="74.0" layoutY="30.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="AES">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="161.0" layoutY="24.0" mnemonicParsing="false" onAction="#AESEncryption" text="Encryption">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="298.0" layoutY="24.0" mnemonicParsing="false" onAction="#AESDencryption" text="Dencryption">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="74.0" layoutY="83.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="DES">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="161.0" layoutY="77.0" mnemonicParsing="false" onAction="#DESEncryption" text="Encryption">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="298.0" layoutY="77.0" mnemonicParsing="false" onAction="#DESDencryption" text="Dencryption">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="74.0" layoutY="134.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="RSA">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="161.0" layoutY="128.0" mnemonicParsing="false" onAction="#RSAEncryption" text="Encryption">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="298.0" layoutY="128.0" mnemonicParsing="false" onAction="#RSADencryption" text="Dencryption">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="74.0" layoutY="186.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="Hybrid">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="161.0" layoutY="180.0" mnemonicParsing="false" onAction="#hybridEncryption" text="Encryption">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="298.0" layoutY="180.0" mnemonicParsing="false" onAction="#hybridDencryption" text="Dencryption">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="510.0" style="-fx-text-fill: #210a61;" text="Analysis:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="190.0" layoutY="516.0" mnemonicParsing="false" onAction="#analysisButtonActionEvent" prefHeight="51.0" prefWidth="197.0" style="-fx-background-color: #aefdaf; -fx-border-color: #183e16; -fx-text-fill: red;" text="Analysis">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

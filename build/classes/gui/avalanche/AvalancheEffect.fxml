@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="594.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.avalanche.AvalancheEffectController">
+<children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="185.0" prefWidth="573.0" style="-fx-background-color: #3b5e79;">
+         <children>
+            <TextField fx:id="input1" layoutX="154.0" layoutY="12.0" prefHeight="39.0" prefWidth="402.0" promptText="Enter Plain Text" style="-fx-background-color: #d2f1f1; -fx-border-color: #03a9f4;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="34.0" layoutY="73.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #ffeb3b;" text="Input 2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input2" layoutX="154.0" layoutY="67.0" prefHeight="39.0" prefWidth="402.0" promptText="Enter Plain Text" style="-fx-background-color: #d2f1f1; -fx-border-color: #03a9f4;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="34.0" layoutY="19.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #ffeb3b;" text="Input 1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="171.0" layoutY="130.0" mnemonicParsing="false" onAction="#analysisButtonActionEvent" prefHeight="39.0" prefWidth="197.0" style="-fx-background-color: #aefdaf; -fx-border-color: #183e16; -fx-text-fill: red;" text="Analyse">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="215.0" style="-fx-text-fill: #210a61;" text="Avalanche Effect: ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="14.0" layoutY="255.0" prefHeight="243.0" prefWidth="573.0" style="-fx-background-color: #3b5e79;">
+         <children>
+            <Label layoutX="176.0" layoutY="31.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="AES">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="176.0" layoutY="84.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="ECC">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="176.0" layoutY="135.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="RSA">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="187.0" prefHeight="25.0" prefWidth="94.0" style="-fx-text-fill: RED;" text="MULTILEVEL">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="aes" layoutX="260.0" layoutY="31.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #ffeb3b;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="des" layoutX="260.0" layoutY="84.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #ffeb3b;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="rsa" layoutX="260.0" layoutY="135.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #ffeb3b;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="hybrid" layoutX="260.0" layoutY="187.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #ffeb3b;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="518.0" style="-fx-text-fill: #210a61;" text="Analysis:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="108.0" layoutY="532.0" mnemonicParsing="false" onAction="#displayButtonActionEvent" prefHeight="51.0" prefWidth="197.0" style="-fx-background-color: #aefdaf; -fx-border-color: #183e16; -fx-text-fill: red;" text="Display Chart">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="318.0" layoutY="532.0" mnemonicParsing="false" onAction="#nextButtonActionEvent" prefHeight="51.0" prefWidth="197.0" style="-fx-background-color: #aefdaf; -fx-border-color: #183e16; -fx-text-fill: red;" text="Analysis">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>    
+</AnchorPane>

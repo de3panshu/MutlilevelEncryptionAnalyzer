@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.throughput.ThroughputController">
+   <children>
+      <AnchorPane prefHeight="592.0" prefWidth="480.0" style="-fx-background-color: #3b5e79;">
+         <children>
+            <Text fill="WHITE" layoutX="1.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME COMPLEXITY" textAlignment="CENTER" wrappingWidth="474.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="13.0" layoutY="478.0" mnemonicParsing="false" onAction="#calculateButtonActionEvent" prefHeight="41.0" prefWidth="450.0" style="-fx-background-color: #aefdaf; -fx-border-color: #183e16; -fx-text-fill: red; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Calculate">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="97.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="AES">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="aesEnctime" alignment="CENTER" layoutX="98.0" layoutY="97.0" prefHeight="17.0" prefWidth="160.0" style="-fx-text-fill: #ffeb3b;" text="Enryption time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="aesDenctime" alignment="CENTER" layoutX="285.0" layoutY="97.0" prefHeight="17.0" prefWidth="160.0" style="-fx-text-fill: #ffeb3b;" text="decyrption time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="aesTotalTime" alignment="CENTER" layoutX="98.0" layoutY="134.0" prefHeight="25.0" prefWidth="304.0" style="-fx-text-fill: #ffeb3b;" text="Total Time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="191.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="DES">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="desEncTime" alignment="CENTER" layoutX="98.0" layoutY="191.0" prefHeight="17.0" prefWidth="160.0" style="-fx-text-fill: #ffeb3b;" text="Enryption time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="desDencTime" alignment="CENTER" layoutX="285.0" layoutY="191.0" prefHeight="17.0" prefWidth="160.0" style="-fx-text-fill: #ffeb3b;" text="decyrption time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="desTotalTime" alignment="CENTER" layoutX="98.0" layoutY="228.0" prefHeight="25.0" prefWidth="304.0" style="-fx-text-fill: #ffeb3b;" text="Total Time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="172.0" prefWidth="430.0" />
+            <Label layoutX="14.0" layoutY="289.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="RSA">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="rsaEncTime" alignment="CENTER" layoutX="98.0" layoutY="289.0" prefHeight="17.0" prefWidth="160.0" style="-fx-text-fill: #ffeb3b;" text="Enryption time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="rsaDencTime" alignment="CENTER" layoutX="285.0" layoutY="289.0" prefHeight="17.0" prefWidth="160.0" style="-fx-text-fill: #ffeb3b;" text="decyrption time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="rsaTotalTime" alignment="CENTER" layoutX="98.0" layoutY="326.0" prefHeight="25.0" prefWidth="304.0" style="-fx-text-fill: #ffeb3b;" text="Total Time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="270.0" prefWidth="430.0" />
+            <Label layoutX="14.0" layoutY="384.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="HYBRID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="hybridEncTime" alignment="CENTER" layoutX="98.0" layoutY="384.0" prefHeight="17.0" prefWidth="160.0" style="-fx-text-fill: #ffeb3b;" text="Enryption time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="hybridDencTime" alignment="CENTER" layoutX="285.0" layoutY="384.0" prefHeight="17.0" prefWidth="160.0" style="-fx-text-fill: #ffeb3b;" text="decyrption time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="hybridTotalTime" alignment="CENTER" layoutX="98.0" layoutY="421.0" prefHeight="25.0" prefWidth="304.0" style="-fx-text-fill: #ffeb3b;" text="Total Time" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="365.0" prefWidth="430.0" />
+         </children>
+      </AnchorPane>
+      <Text fill="#3b5e79" layoutX="480.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THROUGHPUT" textAlignment="CENTER" wrappingWidth="304.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="514.0" layoutY="115.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="AES">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="168.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="DES">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="219.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="RSA">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="271.0" prefHeight="25.0" prefWidth="57.0" style="-fx-text-fill: RED;" text="Hybrid">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="aesTP" layoutX="586.0" layoutY="115.0" prefHeight="25.0" prefWidth="172.0" style="-fx-text-fill: #3b5e79;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="desTP" layoutX="586.0" layoutY="168.0" prefHeight="25.0" prefWidth="172.0" style="-fx-text-fill: #3b5e79;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="rsaTP" layoutX="586.0" layoutY="219.0" prefHeight="17.0" prefWidth="172.0" style="-fx-text-fill: #3b5e79;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="hybridTP" layoutX="586.0" layoutY="271.0" prefHeight="17.0" prefWidth="172.0" style="-fx-text-fill: #3b5e79;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="543.0" layoutY="413.0" mnemonicParsing="false" onAction="#displayButtonActionEvent" prefHeight="51.0" prefWidth="220.0" style="-fx-background-color: #aefdaf; -fx-border-color: #183e16; -fx-text-fill: red;" text="Display Chart">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>    
+</AnchorPane>
